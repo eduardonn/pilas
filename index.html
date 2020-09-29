@@ -61,7 +61,7 @@
             <td>Folha de agosto</td>
             <td>5.416,32</td>
             <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAlterar">Alterar</button></td>
-            <td><button type="button" class="btn btn-danger">Excluir</button></td>
+            <td><button type="button" class="btn btn-danger" onclick="confirmarExclusao()">Excluir</button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -70,7 +70,7 @@
             <td>Mensalidade de setembro</td>
             <td>580,00</td>
             <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAlterar">Alterar</button></td>
-            <td><button type="button" class="btn btn-danger">Excluir</button></td>
+            <td><button type="button" class="btn btn-danger" onclick="confirmarExclusao()">Excluir</button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -79,7 +79,7 @@
             <td>Gasolina Posto Alfa</td>
             <td>150,00</td>
             <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAlterar">Alterar</button></td>
-            <td><button type="button" class="btn btn-danger">Excluir</button></td>
+            <td><button type="button" class="btn btn-danger" onclick="confirmarExclusao()">Excluir</button></td>
           </tr>
         </tbody>
       </table>
@@ -196,6 +196,12 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
         <span>Todos os direitos são reservados.</span>
     </nav>
+
+    <script>
+        function confirmarExclusao() {
+          confirm("Deseja excluir este lançamento agora?");
+        }
+    </script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
